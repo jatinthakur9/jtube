@@ -24,6 +24,7 @@ const Feed = ({ category }) => {
       {data.map((item, index) => {
         return (
           <Link
+            key={index}
             to={`video/${item.snippet.categoryId}/${item.id}`}
             className="card"
           >
